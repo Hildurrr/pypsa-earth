@@ -1255,7 +1255,7 @@ def gadm(
 
     # drop useless columns
     df_gadm.drop(
-        df_gadm.columns.difference(["country", "GADM_ID", "geometry"]),
+        df_gadm.columns.difference(["country", "GADM_ID","NAME_1", "geometry"]),
         axis=1,
         inplace=True,
         errors="ignore",
