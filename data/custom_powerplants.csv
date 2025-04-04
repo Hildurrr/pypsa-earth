@@ -1,63 +1,64 @@
-﻿Name,Fueltype,Technology,Set,Country,Capacity,Efficiency,Duration,Volume_Mm3,DamHeight_m,StorageCapacity_MWh,DateIn,DateRetrofit,DateOut,lat,lon,EIC,projectID,bus
-Kidatu,Hydro,Reservoir,PP,TZ,200,,,,,,1975,1975,2075,-7.6367,36.8866,{nan},""{'GHPT': {'G603596'}, 'GEO': {'GEO-40355'},  'GPD': {'WRI1019867'}}"",
-Kihansi,Hydro,Run-Of-River,PP,TZ,180,,,,,,1999,1999,2099,-8.5751,35.8512,{nan},""{'GHPT': {'G603597'}, 'GEO': {'GEO-40352'},  'GPD': {'WRI1019868'}}"",
-Mtera,Hydro,Reservoir,PP,TZ,80,,,,,,1980,1980,2080,-7.1386,35.9888,{nan},""{'GHPT': {'G603599'}, 'GEO': {'GEO-40354'},  'GPD': {'WRI1019869'}}"",
-Hale ,Hydro,Run-Of-River,PP,TZ,20.73248408,,,,,,1964,1964,2064,-5.298,38.604,{nan},""{'GEO': {'GEO-40350'}, 'GEO': {'GEO-40350'},  'GPD': {'WRI1019866'}}"",
-Nyumba Ya Mungu ,Hydro,Reservoir,PP,TZ,7.125971594,,,,,,1966,1966,2066,-3.826,37.47,{nan},""{'GEO': {'GEO-40349'}, 'GPD': {'WRI1019870'}}"",
-Pangani Falls Tanzania,Hydro,Run-Of-River,PP,TZ,67.13375796,,,,,,1995,1995,2095,-5.349,38.651,{nan},""{'GEO': {'GEO-40351'},  'GPD': {'WRI1019871'}}"",
-Julius Nyerere,Hydro,Reservoir,PP,TZ,2115,,,,,,2024,2024,2124,-7.8032,37.8511,{nan},{'GHPT': {'G603595'}},
-Rusumo,Hydro,Reservoir,PP,TZ,27,,,,,,2023,2023,2123,-2.3823,30.7832,{nan},{'GHPT': {'G604140'}},
-Kikonge,Hydro,Reservoir,PP,TZ,300,,,,,,2028,2028,2078,-10.44,34.8,{nan},{'AHA v2.3}},
-Ruhudji,Hydro,Reservoir,PP,TZ,358,,,,,,2025,2025,2075,-9.499,35.306,{nan},{'AHA v2.3}},
-Mwenga,Hydro,Run-Of-River,PP,TZ,4,,,,,,2012,2012,2062,-5.248503303,29.84765679,{nan},{'AHA v2.3}},
-Songwe Manolo,Hydro,Reservoir,PP,TZ,90.1,,,,,,2028,2028,2078,-9.608,33.538,{nan},{'AHA v2.3}},
-Songwe Sofre,Hydro,Reservoir,PP,TZ,81.6,,,,,,2035,2035,2085,-9.607,33.659,{nan},{'AHA v2.3}},
-Taveta,Hydro,Run-Of-River,PP,TZ,145,,,,,,2034,2034,2084,-3.671312194,37.36230388,{nan},{'AHA v2.3}},
-Kakono,Hydro,Run-Of-River,PP,TZ,87,,,,,,2026,2026,2076,-3.2798763,30.9661209,{nan},{'AHA v2.3}},
-Malagaresi,Hydro,Reservoir,PP,TZ,44.8,,,,,,2026,2026,2076,-5.191,30.083,{nan},{'AHA v2.3}},
-Masigira,Hydro,Reservoir,PP,TZ,118,,,,,,2028,2028,2078,-3.6691334,33.4295028,{nan},{'AHA v2.3}},
-Songwe Bipungu,Hydro,Reservoir,PP,TZ,17,,,,,,2040,2040,2090,-9.5850732,33.5145624,{nan},{'AHA v2.3}},
-Rumakali,Hydro,Reservoir,PP,TZ,222,,,,,,2026,2026,2076,-9.318,33.969,{nan},{'AHA v2.3}},
-Ikondo,Hydro,Reservoir,PP,TZ,340,,,,,,2038,2038,2088,-9.628912954,34.60913099,{nan},{'AHA v2.3}},
-Mpanga (Tanzania),Hydro,Reservoir,PP,TZ,160,,,,,,2033,2033,2083,-8.854,35.645,{nan},{'AHA v2.3}},
-Iringa Nginayo,Hydro,Run-Of-River,PP,TZ,52,,,,,,2035,2035,2085,-7.7681,35.6861,{nan},{'AHA v2.3}},
-Iringa Ibosa,Hydro,Run-Of-River,PP,TZ,36,,,,,,2035,2035,2085,-7.7681,35.6861,{nan},{'AHA v2.3}},
-Upper Kihansi,Hydro,Reservoir,PP,TZ,180,,,,,,2027,2027,2077,-8.4,36.35,{nan},{'AHA v2.3}},
-Uwemba,Hydro,Run-Of-River,PP,TZ,0.84,,,,,,1991,1991,2041,-9.27,34.47,{nan},{'AHA v2.3}},
-Yovi,Hydro,Run-Of-River,PP,TZ,0.95,,,,,,2012,2012,2062,-7.183,36.709,{nan},{'AHA v2.3}},
-Matembwe,Hydro,Run-Of-River,PP,TZ,0.59,,,,,,2015,2015,2065,-9.339,35.154,{nan},{'AHA v2.3}},
-Darakuta,Hydro,Run-Of-River,PP,TZ,0.32,,,,,,2013,2013,2063,-3.967,35.62,{nan},{'AHA v2.3}},
-Andoya,Hydro,Run-Of-River,PP,TZ,1,,,,,,2015,2015,2065,-10.441667,35.07,{nan},{'AHA v2.3}},
-Tulia,Hydro,Run-Of-River,PP,TZ,5,,,,,,2015,2015,2065,-11.096,35.279,{nan},{'AHA v2.3}},
-TPC Moshi,Biomass,Steam Turbine,PP,TZ,9,,,,,,2010,2010,2040,-3.530369256,37.32656896,{nan},N/A,
-Tanwat,Biomass,Steam Turbine,PP,TZ,1.5,,,,,,2011,2011,2041,-9.28236,34.78011,{nan},N/A,
-Ubungo I,CCGT,CCGT,PP,TZ,102,,,,,,2007,2007,2027,-6.7945,39.2086,{nan},{'GPD': {'WRI1019872'}},
-Songas,CCGT,CCGT,PP,TZ,189,,,,,,2006,2006,2026,-6.8235,39.293,{nan},N/A,
-Unbungo II,CCGT,CCGT,PP,TZ,129,,,,,,2011,2011,2036,-6.7945,39.2086,{nan},{'GPD': {'WRI1019872'}},
-Kinyerezi I,CCGT,CCGT,PP,TZ,150,,,,,,2015,2015,2040,-6.857982,39.150713,{nan},{'GGPT': {'L100000406824'}},
-Kinyerezi II,CCGT,CCGT,PP,TZ,248.2,,,,,,2018,2018,2013,-6.857982,39.150713,{nan},{'GGPT': {'L100000406824'}},
-Tegeta,CCGT,CCGT,PP,TZ,45,,,,,,2009,2009,2029,-6.67442,39.18772,{nan},{'GGPT': {'L100000409170'},
-Mtwara I,CCGT,CCGT,PP,TZ,18,,,,,,2007,2007,2027,-10.26,40.041,{nan},{'GPD': {'WRI1019876'}},
-Mtwara II,CCGT,CCGT,PP,TZ,4,,,,,,2017,2017,2037,-10.26,40.041,{nan},{'GPD': {'WRI1019876'}},
-Somanga,CCGT,CCGT,PP,TZ,7.5,,,,,,2010,2010,2030,-8.4,39.5333,{nan},N/A,
-BIharamulo,Oil,Steam Turbine,PP,TZ,4.1,,,,,,2015,2015,2035,-2.6316,31.3082,{nan},N/A,
-Zuzu,Oil,Steam Turbine,PP,TZ,7.4,,,,,,1980,1980,2000,-6.163,35.7516,{nan},N/A,
-Nyakato,Oil,Steam Turbine,PP,TZ,63,,,,,,2013,2013,2033,-2.524,32.9662,{nan},{'GPD': {'WRI1019875'}},
-Songea,Oil,Steam Turbine,PP,TZ,7.7,,,,,,2005,2005,2025,-10.6833,35.65,{nan},N/A,
-Ludewa,Oil,Steam Turbine,PP,TZ,1.3,,,,,,2010,2010,2030,-10.0833,34.6667,{nan},N/A,
-Mbinga,Oil,Steam Turbine,PP,TZ,2,,,,,,2007,2007,2027,-10.9333,35.0167,{nan},N/A,
-Madaba,Oil,Steam Turbine,PP,TZ,0.5,,,,,,2010,2010,2030,-9,34.35,{nan},N/A,
-Namtumbo,Oil,Steam Turbine,PP,TZ,0.3,,,,,,2012,2012,2032,-10.3833,36.05,{nan},N/A,
-Ngara,Oil,Steam Turbine,PP,TZ,2.5,,,,,,2015,2015,2035,-2.5126,30.6554,{nan},N/A,
-Mchuchuma,Hard Coal,Steam Turbine,PP,TZ,600,,,,,,2026,2026,2046,-9.25,34.25,{nan},N/A,
-Kinyerenzi I ext,OCGT,OCGT,PP,TZ,185,,,,,,2027,2027,2047,-6.857982,39.150713,{nan},N/A,
-Mtwara,CCGT,CCGT,PP,TZ,300,,,,,,2026,2026,2051,-10.26,40.041,{nan},N/A,
-Ngozi I,Geothermal,Steam Turbine,PP,TZ,30,,,,,,2025,2025,2045,-9.2556,33.6434,{nan},N/A,
-Ngozi II,Geothermal,Steam Turbine,PP,TZ,40,,,,,,2027,2027,2047,-9.2556,33.6434,{nan},N/A,
-Shinyanga solar I,Solar,Pv,PP,TZ,50,,,,,,2025,2025,2055,-6.5247,35.7878,{nan},N/A,
-Shinyanga solar II,Solar,Pv,PP,TZ,100,,,,,,2025,2025,2055,-6.5247,35.7878,{nan},N/A,
-Zanzibar Solar,Solar,Pv,PP,TZ,18,,,,,,2026,2026,2056,-6.0759,39.3815,{nan},N/A,
-Dodoma,Solar,Pv,PP,TZ,55,,,,,,2030,2030,2060,-6.1398,35.7196,{nan},N/A,
-Songwe geothermal,Geothermal,Steam Turbine,PP,TZ,5,,,,,,2030,2030,2060,-1.630581223,34.35328563,{nan},N/A,
-Kiejo-Mbaka,Geothermal,Steam Turbine,PP,TZ,60,,,,,,2030,2030,2060,-9.353206928,33.83607419,{nan},N/A,
-Mwenga Wind,Wind,Onwind,PP,TZ,2.4,,,,,,2020,2020,2045,-8.2121,35.66299,{nan},N/A,
+﻿Name;Fueltype;Technology;Set;Country;Capacity;Efficiency;Duration;Volume_Mm3;DamHeight_m;StorageCapacity_MWh;DateIn;DateRetrofit;DateOut;lat;lon;EIC;projectID;bus
+Kidatu;Hydro;Reservoir;PP;TZ;200;;;;;;1975;1975;2075;-7.6367;36.8866;;;61
+Kihansi;Hydro;Run-Of-River;PP;TZ;180;;;;;;1999;1999;2099;-8.5751;35.8512;;;20
+Mtera;Hydro;Reservoir;PP;TZ;80;;;;;;1980;1980;2080;-7.1386;35.9888;;;14
+Hale ;Hydro;Run-Of-River;PP;TZ;20.73248408;;;;;;1964;1964;2064;-5.298;38.604;;;47
+Nyumba Ya Mungu ;Hydro;Reservoir;PP;TZ;7.125971594;;;;;;1966;1966;2066;-3.826;37.47;;;58
+Pangani Falls Tanzania;Hydro;Run-Of-River;PP;TZ;67.13375796;;;;;;1995;1995;2095;-5.349;38.651;;;34
+Julius Nyerere;Hydro;Reservoir;PP;TZ;2115;;;;;;2024;2024;2124;-7.8032;37.8511;;;97
+Rusumo;Hydro;Reservoir;PP;TZ;27;;;;;;2023;2023;2123;-2.3823;30.7832;;;109
+Kikonge;Hydro;Reservoir;PP;TZ;300;;;;;;2028;2028;2078;-10.44;34.8;;;110
+Ruhudji;Hydro;Reservoir;PP;TZ;358;;;;;;2025;2025;2075;-9.499;35.306;;;21
+Mwenga;Hydro;Run-Of-River;PP;TZ;4;;;;;;2012;2012;2062;-5.248503303;29.84765679;;;89
+Songwe Manolo;Hydro;Reservoir;PP;TZ;90.1;;;;;;2028;2028;2078;-9.608;33.538;;;6
+Songwe Sofre;Hydro;Reservoir;PP;TZ;81.6;;;;;;2035;2035;2085;-9.607;33.659;;;6
+Taveta;Hydro;Run-Of-River;PP;TZ;145;;;;;;2034;2034;2084;-3.671312194;37.36230388;;;58
+Kakono;Hydro;Run-Of-River;PP;TZ;87;;;;;;2026;2026;2076;-3.2798763;30.9661209;;;89
+Malagaresi;Hydro;Reservoir;PP;TZ;44.8;;;;;;2026;2026;2076;-5.191;30.083;;;89
+Masigira;Hydro;Reservoir;PP;TZ;118;;;;;;2028;2028;2078;-3.6691334;33.4295028;;;10
+Songwe Bipungu;Hydro;Reservoir;PP;TZ;17;;;;;;2040;2040;2090;-9.5850732;33.5145624;;;6
+Rumakali;Hydro;Reservoir;PP;TZ;222;;;;;;2026;2026;2076;-9.318;33.969;;;6
+Ikondo;Hydro;Reservoir;PP;TZ;340;;;;;;2038;2038;2088;-9.628912954;34.60913099;;;49
+Mpanga (Tanzania);Hydro;Reservoir;PP;TZ;160;;;;;;2033;2033;2083;-8.854;35.645;;;20
+Iringa Nginayo;Hydro;Run-Of-River;PP;TZ;52;;;;;;2035;2035;2085;-7.7681;35.6861;;;29
+Iringa Ibosa;Hydro;Run-Of-River;PP;TZ;36;;;;;;2035;2035;2085;-7.7681;35.6861;;;29
+Upper Kihansi;Hydro;Reservoir;PP;TZ;180;;;;;;2027;2027;2077;-8.4;36.35;;;20
+Uwemba;Hydro;Run-Of-River;PP;TZ;0.84;;;;;;1991;1991;2041;-9.27;34.47;;;49
+Yovi;Hydro;Run-Of-River;PP;TZ;0.95;;;;;;2012;2012;2062;-7.183;36.709;;;81
+Matembwe;Hydro;Run-Of-River;PP;TZ;0.59;;;;;;2015;2015;2065;-9.339;35.154;;;49
+Darakuta;Hydro;Run-Of-River;PP;TZ;0.32;;;;;;2013;2013;2063;-3.967;35.62;;;56
+Andoya;Hydro;Run-Of-River;PP;TZ;1;;;;;;2015;2015;2065;-10.441667;35.07;;;110
+Tulia;Hydro;Run-Of-River;PP;TZ;5;;;;;;2015;2015;2065;-11.096;35.279;;;110
+TPC Moshi;Biomass;Steam Turbine;PP;TZ;9;;;;;;2010;2010;2040;-3.530369256;37.32656896;;;54
+Tanwat;Biomass;Steam Turbine;PP;TZ;1.5;;;;;;2011;2011;2041;-9.28236;34.78011;;;49
+Ubungo I;CCGT;CCGT;PP;TZ;102;;;;;;2007;2007;2027;-6.7945;39.2086;;;1
+Songas;CCGT;CCGT;PP;TZ;189;;;;;;2006;2006;2026;-6.8235;39.293;;;24
+Unbungo II;CCGT;CCGT;PP;TZ;129;;;;;;2011;2011;2036;-6.7945;39.2086;;;1
+Kinyerezi I;CCGT;CCGT;PP;TZ;150;;;;;;2015;2015;2040;-6.857982;39.150713;;;39
+Kinyerezi II;CCGT;CCGT;PP;TZ;248.2;;;;;;2018;2018;2013;-6.857982;39.150713;;;39
+Tegeta;CCGT;CCGT;PP;TZ;45;;;;;;2009;2009;2029;-6.67442;39.18772;;;36
+Mtwara I;CCGT;CCGT;PP;TZ;18;;;;;;2007;2007;2027;-10.26;40.041;;;43
+Mtwara II;CCGT;CCGT;PP;TZ;4;;;;;;2017;2017;2037;-10.26;40.041;;;43
+Somanga;CCGT;CCGT;PP;TZ;7.5;;;;;;2010;2010;2030;-8.4;39.5333;;;46
+BIharamulo;Oil;Steam Turbine;PP;TZ;4.1;;;;;;2015;2015;2035;-2.6316;31.3082;;;89
+Zuzu;Oil;Steam Turbine;PP;TZ;7.4;;;;;;1980;1980;2000;-6.163;35.7516;;;13
+Nyakato;Oil;Steam Turbine;PP;TZ;63;;;;;;2013;2013;2033;-2.524;32.9662;;;3
+Songea;Oil;Steam Turbine;PP;TZ;7.7;;;;;;2005;2005;2025;-10.6833;35.65;;;110
+Ludewa;Oil;Steam Turbine;PP;TZ;1.3;;;;;;2010;2010;2030;-10.0833;34.6667;;;110
+Mbinga;Oil;Steam Turbine;PP;TZ;2;;;;;;2007;2007;2027;-10.9333;35.0167;;;110
+Madaba;Oil;Steam Turbine;PP;TZ;0.5;;;;;;2010;2010;2030;-9;34.35;;;49
+Namtumbo;Oil;Steam Turbine;PP;TZ;0.3;;;;;;2012;2012;2032;-10.3833;36.05;;;110
+Ngara;Oil;Steam Turbine;PP;TZ;2.5;;;;;;2015;2015;2035;-2.5126;30.6554;;;109
+Mchuchuma;Hard Coal;Steam Turbine;PP;TZ;600;;;;;;2026;2026;2046;-9.25;34.25;;;49
+Kinyerenzi I ext;OCGT;OCGT;PP;TZ;185;;;;;;2027;2027;2047;-6.857982;39.150713;;;39
+Mtwara;CCGT;CCGT;PP;TZ;300;;;;;;2026;2026;2051;-10.26;40.041;;;43
+Ngozi I;Geothermal;Steam Turbine;PP;TZ;30;;;;;;2025;2025;2045;-9.2556;33.6434;;;6
+Ngozi II;Geothermal;Steam Turbine;PP;TZ;40;;;;;;2027;2027;2047;-9.2556;33.6434;;;6
+Shinyanga solar I;Solar;Pv;PP;TZ;50;;;;;;2025;2025;2055;-6.5247;35.7878;;;13
+Shinyanga solar II;Solar;Pv;PP;TZ;100;;;;;;2025;2025;2055;-6.5247;35.7878;;;13
+Zanzibar Solar;Solar;Pv;PP;TZ;18;;;;;;2026;2026;2056;-6.0759;39.3815;;;106
+Dodoma;Solar;Pv;PP;TZ;55;;;;;;2030;2030;2060;-6.1398;35.7196;;;13
+Songwe geothermal;Geothermal;Steam Turbine;PP;TZ;5;;;;;;2030;2030;2060;-1.630581223;34.35328563;;;30
+Kiejo-Mbaka;Geothermal;Steam Turbine;PP;TZ;60;;;;;;2030;2030;2060;-9.353206928;33.83607419;;;6
+Mwenga Wind;Wind;Onwind;PP;TZ;2.4;;;;;;2020;2020;2045;-8.2121;35.66299;;;29
+Tosamaganga;Hydro;Run-Of-River;PP;TZ;1.22;;;;;;2015;2015;2040;-7.837443;35.597468;;;29

@@ -70,7 +70,7 @@ def create_time_series(monthly_capacity_factors_file, output_file):
         # Generate hourly values for each month
         hourly_factors = []
         for month, factor in enumerate(monthly_factors, start=1):
-            days_in_month = pd.Period(f"2020-{month:02d}").days_in_month  # Leap year-safe
+            days_in_month = pd.Period(f"2013-{month:02d}").days_in_month  # Leap year-safe
             hourly_factors.extend([factor] * days_in_month * 24)
 
         hourly_data[plant_id] = hourly_factors
