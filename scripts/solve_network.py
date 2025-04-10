@@ -118,11 +118,11 @@ def prepare_network(n, solve_opts, config):
             bus=n.buses.index,
             carrier="load",
             sign=1e-3,  # Adjust sign to measure p and p_nom in kW instead of MW
-            marginal_cost=1e2,  # Eur/kWh
+            marginal_cost=1e3,  # Eur/kWh
             # intersect between macroeconomic and surveybased
             # willingness to pay
             # http://journal.frontiersin.org/article/10.3389/fenrg.2015.00055/full
-            p_nom=1e9,  # kW
+            p_nom=1e4,  # kW
         )
 
     if solve_opts.get("noisy_costs"):
