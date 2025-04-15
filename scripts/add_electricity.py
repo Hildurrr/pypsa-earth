@@ -520,6 +520,29 @@ def attach_hydro(n, costs, ppl):
                     .transpose("time", "name")
                     .to_pandas()
                 )
+        external_inflow_data = snakemake.config["renewable"]["hydro"].get("external_inflow_data", False)
+        if external_inflow_data:
+            inflow_path = snakemake.config["renewable"]["hydro"]["inflow_data_path"]
+            with xr.open_dataarray(inflow_path) as external_inflow:
+                if "plant" not in external_inflow.indexes:
+                    logger.error("The external inflow data does not contain a 'plant' index.")
+                    return
+
+                found_plants_2 = ppl.ppl_id[ppl.ppl_id.isin(external_inflow.indexes["plant"])]
+                if not found_plants_2.empty:
+                    inflow_t = (
+                        external_inflow.sel(plant=found_plants_2.values)
+                        .assign_coords(plant=found_plants_2.index)
+                        .rename({"plant": "name"})
+                        .transpose("time", "name")
+                        .to_pandas()
+                    )
+
+    # Ensure inflow_t is valid and aligned
+    if inflow_t is None or inflow_t.empty:
+        logger.warning("Inflow data is missing or empty. Setting inflow to zero.")
+        inflow_t = pd.DataFrame(0.0, index=n.snapshots, columns=hydro.index)
+
 
     if "ror" in carriers and not ror.empty:
         n.madd(
