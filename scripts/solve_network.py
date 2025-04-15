@@ -91,6 +91,15 @@ from linopy import merge
 from pypsa.descriptors import get_switchable_as_dense as get_as_dense
 from pypsa.optimization.abstract import optimize_transmission_expansion_iteratively
 from pypsa.optimization.optimize import optimize
+from pypsa.linopf import (
+    define_constraints,
+    define_variables,
+    get_var,
+    ilopf,
+    join_exprs,
+    linexpr,
+    network_lopf,
+)
 
 logger = create_logger(__name__)
 pypsa.pf.logger.setLevel(logging.WARNING)
@@ -111,18 +120,19 @@ def prepare_network(n, solve_opts, config):
 
     if solve_opts.get("load_shedding"):
         n.add("Carrier", "Load")
+        ac_buses = n.buses[n.buses.carrier == "AC"].index
         n.madd(
             "Generator",
-            n.buses.index,
+            ac_buses,
             " load",
-            bus=n.buses.index,
+            bus=ac_buses,
             carrier="load",
             sign=1e-3,  # Adjust sign to measure p and p_nom in kW instead of MW
-            marginal_cost=1e3,  # Eur/kWh
+            marginal_cost=8e3,  # Eur/kWh
             # intersect between macroeconomic and surveybased
             # willingness to pay
             # http://journal.frontiersin.org/article/10.3389/fenrg.2015.00055/full
-            p_nom=1e4,  # kW
+            p_nom=1e9,  # kW
         )
 
     if solve_opts.get("noisy_costs"):
@@ -473,6 +483,7 @@ def add_battery_constraints(n):
     )
 
     n.model.add_constraints(lhs == 0, name="Link-charger_ratio")
+
 
 
 def add_RES_constraints(n, res_share, config):
@@ -1002,6 +1013,7 @@ def extra_functionality(n, snapshots):
 
     add_battery_constraints(n)
     add_lossy_bidirectional_link_constraints(n)
+
 
     if snakemake.config["sector"]["chp"]:
         logger.info("setting CHP constraints")
