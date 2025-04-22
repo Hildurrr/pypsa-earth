@@ -224,7 +224,7 @@ def add_CCL_constraints(n, config):
         lhs <= max_matrix, name="agg_p_nom_max", mask=max_matrix.notnull()
     )
 
-
+    
 def add_EQ_constraints(n, o, scaling=1e-1):
     """
     Add equity constraints to the network.
@@ -484,8 +484,57 @@ def add_battery_constraints(n):
 
     n.model.add_constraints(lhs == 0, name="Link-charger_ratio")
 
+##added new constraints
+def new_geothermal_capacity_constraint(n):
+    if "Generator-p_nom" not in getattr(n.model, "variables", {}):
+        return 
+    geothermal_i = n.generators.query("carrier == 'geothermal'").index
+    # p_nom_current = get_var(n, "Generator", "p_nom")[geothermal_i]
+    #p_nom_current = n.generators.p_nom[geothermal_i]
+    # lhs = linexpr((1,p_nom_current)).sum()
+    # lhs = (n.generators.p_nom[geothermal_i].sum())
+    lhs = n.model['Generator-p_nom'].loc[geothermal_i].sum()
+    rhs = 995
+    # define_constraints(n, lhs, '<=', rhs, 'Generator', 'new_geothermal_capacity')
+    n.model.add_constraints(lhs <= rhs, name="new_geothermal_capacity")
 
+def new_solar_capacity_constraint(n):
+    if "Generator-p_nom" not in getattr(n.model, "variables", {}):
+        return 
+    solar_i = n.generators.query("carrier == 'solar'").index
+    #p_nom_current = get_var(n, "Generator", "p_nom")[solar_i]
+    lhs = n.model['Generator-p_nom'].loc[solar_i].sum()
+    rhs = 3000
+    n.model.add_constraints(lhs <= rhs, name="new_solar_capacity")
 
+def new_wind_capacity_constraint(n):
+    if "Generator-p_nom" not in getattr(n.model, "variables", {}):
+        return 
+    wind_i = n.generators.query("carrier == 'onwind'").index
+    #p_nom_current = get_var(n, "Generator", "p_nom")[wind_i]
+    lhs = n.model['Generator-p_nom'].loc[wind_i].sum()
+    rhs = 1300
+    n.model.add_constraints(lhs <= rhs, name="new_wind_capacity")
+
+def new_biomass_capacity_constraint(n):
+    if "Generator-p_nom" not in getattr(n.model, "variables", {}):
+        return 
+    biomass_i = n.generators.query("carrier == 'biomass'").index
+   
+    lhs = n.model['Generator-p_nom'].loc[biomass_i].sum()
+    rhs = 40
+    n.model.add_constraints(lhs <= rhs, name="new_biomass_capacity")
+
+# def new_CCGT_capacity_constraint(n):
+#     if "Generator-p_nom" not in getattr(n.model, "variables", {}):
+#         return 
+#     CCGT_i = n.generators.query("carrier == 'CCGT'").index
+   
+#     lhs = n.model['Generator-p_nom'].loc[CCGT_i].sum()+500
+#     rhs = 4000
+#     n.model.add_constraints(lhs <= rhs, name="new_CCGT_capacity")
+
+#####
 def add_RES_constraints(n, res_share, config):
     """
     The constraint ensures that a predefined share of power is generated
@@ -1013,7 +1062,11 @@ def extra_functionality(n, snapshots):
 
     add_battery_constraints(n)
     add_lossy_bidirectional_link_constraints(n)
-
+    new_solar_capacity_constraint(n)
+    new_wind_capacity_constraint(n)
+    new_geothermal_capacity_constraint(n)
+    new_biomass_capacity_constraint(n)
+    #new_CCGT_capacity_constraint(n)
 
     if snakemake.config["sector"]["chp"]:
         logger.info("setting CHP constraints")
@@ -1062,6 +1115,8 @@ def extra_functionality(n, snapshots):
         set_h2_colors(n)
 
     add_co2_sequestration_limit(n, snapshots)
+
+
 
 
 def solve_network(n, config, solving, **kwargs):

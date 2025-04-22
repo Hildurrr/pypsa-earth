@@ -13,7 +13,7 @@
 12,Songwe Manolo,Hydro,Reservoir,PP,TZ,90.1,,,,,,2028,2028,2078,-9.608,33.538,{nan},{'AHA v2.3}}
 13,Songwe Sofre,Hydro,Reservoir,PP,TZ,81.6,,,,,,2035,2035,2085,-9.607,33.659,{nan},{'AHA v2.3}}
 14,Taveta,Hydro,Run-Of-River,PP,TZ,145,,,,,,2034,2034,2084,-3.671312194,37.36230388,{nan},{'AHA v2.3}}
-15,Kakono,Hydro,Run-Of-River,PP,TZ,87,,,,,,2026,2026,2076,-3.2798763,30.9661209,{nan},{'AHA v2.3}}
+15,Kakono,Hydro,Run-Of-River,PP,TZ,87,,,,,,2026,2026,2076,-1.0521935,30.9104641,{nan},{'AHA v2.3}}
 16,Malagaresi,Hydro,Reservoir,PP,TZ,44.8,,,,,,2026,2026,2076,-5.191,30.083,{nan},{'AHA v2.3}}
 17,Masigira,Hydro,Reservoir,PP,TZ,118,,,,,,2028,2028,2078,-3.6691334,33.4295028,{nan},{'AHA v2.3}}
 18,Songwe Bipungu,Hydro,Reservoir,PP,TZ,17,,,,,,2040,2040,2090,-9.5850732,33.5145624,{nan},{'AHA v2.3}}
@@ -56,9 +56,12 @@
 55,Ngozi II,Geothermal,Steam Turbine,PP,TZ,40,,,,,,2027,2027,2047,-9.2556,33.6434,{nan},N/A
 56,Shinyanga solar I,Solar,Pv,PP,TZ,50,,,,,,2025,2025,2055,-6.5247,35.7878,{nan},N/A
 57,Shinyanga solar II,Solar,Pv,PP,TZ,100,,,,,,2025,2025,2055,-6.5247,35.7878,{nan},N/A
-58,Zanzibar Solar,Solar,Pv,PP,TZ,18,,,,,,2026,2026,2056,-6.0759,39.3815,{nan},N/A
-59,Dodoma,Solar,Pv,PP,TZ,55,,,,,,2030,2030,2060,-6.1398,35.7196,{nan},N/A
+58,Zanzibar Solar,Solar,Pv,PP,TZ,63,,,,,,2026,2026,2056,-6.0759,39.3815,{nan},N/A
+59,Dodoma,Solar,Pv,PP,TZ,100,,,,,,2030,2030,2060,-6.1398,35.7196,{nan},N/A
 60,Songwe geothermal,Geothermal,Steam Turbine,PP,TZ,5,,,,,,2030,2030,2060,-1.630581223,34.35328563,{nan},N/A
 61,Kiejo-Mbaka,Geothermal,Steam Turbine,PP,TZ,60,,,,,,2030,2030,2060,-9.353206928,33.83607419,{nan},N/A
 62,Mwenga Wind,Wind,Onwind,PP,TZ,2.4,,,,,,2020,2020,2045,-8.2121,35.66299,{nan},N/A
 63,Tosamaganga,Hydro,Run-Of-River,PP,TZ,1.22,,,,,,2015,2015,2040,-7.837443,35.597468,{nan},N/A
+64,Kigoma,Oil,Steam Turbine,PP,TZ,8.3,,,,,,2010,2010,2030,-4.8865014,29.6210429,{nan},N/A
+65,Kasulu,Oil,Steam Turbine,PP,TZ,2.5,,,,,,2010,2010,2030,-4.5805,30.123997,{nan},N/A
+66,Sumbawanga,Oil,Steam Turbine,PP,TZ,5,,,,,,2011,2011,2031,-7.920613797933314,31.578575449309167,{nan},N/A 
