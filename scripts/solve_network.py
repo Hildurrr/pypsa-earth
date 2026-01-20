@@ -513,7 +513,7 @@ def new_wind_capacity_constraint(n):
     wind_i = n.generators.query("carrier == 'onwind'").index
     #p_nom_current = get_var(n, "Generator", "p_nom")[wind_i]
     lhs = n.model['Generator-p_nom'].loc[wind_i].sum()
-    rhs = 1300
+    rhs = 1370
     n.model.add_constraints(lhs <= rhs, name="new_wind_capacity")
 
 def new_biomass_capacity_constraint(n):
@@ -522,17 +522,37 @@ def new_biomass_capacity_constraint(n):
     biomass_i = n.generators.query("carrier == 'biomass'").index
    
     lhs = n.model['Generator-p_nom'].loc[biomass_i].sum()
-    rhs = 40
+    rhs = 0
     n.model.add_constraints(lhs <= rhs, name="new_biomass_capacity")
 
-# def new_CCGT_capacity_constraint(n):
+# def new_oil_capacity_constraint(n):
 #     if "Generator-p_nom" not in getattr(n.model, "variables", {}):
 #         return 
-#     CCGT_i = n.generators.query("carrier == 'CCGT'").index
+#     oil_i = n.generators.query("carrier == 'oil'").index
    
-#     lhs = n.model['Generator-p_nom'].loc[CCGT_i].sum()+500
-#     rhs = 4000
-#     n.model.add_constraints(lhs <= rhs, name="new_CCGT_capacity")
+#     lhs = n.model['Generator-p_nom'].loc[oil_i].sum()
+#     rhs = 0
+#     n.model.add_constraints(lhs <= rhs, name="new_oil_capacity")
+
+def new_CCGT_capacity_constraint(n):
+    if "Generator-p_nom" not in getattr(n.model, "variables", {}):
+        return 
+    CCGT_i = n.generators.query("carrier == 'CCGT'").index
+   
+    lhs = n.model['Generator-p_nom'].loc[CCGT_i].sum()+500
+    rhs = 6700
+    n.model.add_constraints(lhs <= rhs, name="new_CCGT_capacity")
+
+def new_coal_capacity_constraint(n):
+    if "Generator-p_nom" not in getattr(n.model, "variables", {}):
+        return 
+    coal_i = n.generators.query("carrier == 'coal'").index
+   
+    lhs = n.model['Generator-p_nom'].loc[coal_i].sum()+1000
+    rhs = 5300
+    n.model.add_constraints(lhs <= rhs, name="new_coal_capacity")
+
+
 
 #####
 def add_RES_constraints(n, res_share, config):
@@ -1066,7 +1086,9 @@ def extra_functionality(n, snapshots):
     new_wind_capacity_constraint(n)
     new_geothermal_capacity_constraint(n)
     new_biomass_capacity_constraint(n)
-    #new_CCGT_capacity_constraint(n)
+    #new_oil_capacity_constraint(n)
+    new_CCGT_capacity_constraint(n)
+    new_coal_capacity_constraint(n)
 
     if snakemake.config["sector"]["chp"]:
         logger.info("setting CHP constraints")
